@@ -1,0 +1,11 @@
+#!/usr/bin/make -f
+
+export PYBUILD_NAME=mcp_types
+
+%:
+	dh $@ --with python3 --buildsystem=pybuild
+
+# No tests/ directory ships in the mcp-types 2.0.0b2 sdist published to
+# PyPI -- there is nothing to run, not a maintainer choice to skip.
+override_dh_auto_test:
+	@echo "No tests/ directory in the mcp-types 2.0.0b2 sdist -- nothing to run"

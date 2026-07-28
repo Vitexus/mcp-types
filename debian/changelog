@@ -1,0 +1,9 @@
+mcp-types (2.0.0~b2-1~vitex1) unstable; urgency=medium
+
+  * New source package: mcp-types, the wire-types dependency split
+    out of the mcp SDK's v2 line. Packaged to satisfy mcp 2.0.0b2's
+    dependency, needed for the mcprack fastmcp 4.0.0a2 migration.
+    Epoch/tilde-versioning mirrors the existing python-mcp packaging
+    convention for this pre-release line.
+
+ -- Vítězslav Dvořák <info@vitexsoftware.cz>  Mon, 27 Jul 2026 17:35:00 +0200

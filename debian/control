@@ -1,0 +1,29 @@
+Source: mcp-types
+Section: python
+Priority: optional
+Maintainer: Vítězslav Dvořák <info@vitexsoftware.cz>
+Build-Depends: debhelper-compat (= 13),
+               dh-python,
+               pybuild-plugin-pyproject,
+               python3-all,
+               python3-hatchling,
+               python3-pydantic (>= 2.12.0),
+Standards-Version: 4.6.2.0
+Homepage: https://modelcontextprotocol.io
+Vcs-Git: https://github.com/Vitexus/mcp-types.git
+Vcs-Browser: https://github.com/Vitexus/mcp-types
+Rules-Requires-Root: no
+
+Package: python3-mcp-types
+Architecture: all
+Depends: python3-pydantic (>= 2.12.0),
+         python3-typing-extensions (>= 4.13.0),
+         ${misc:Depends},
+         ${python3:Depends},
+Description: Model Context Protocol wire types (Python)
+ mcp-types provides the pydantic-based wire types for the Model
+ Context Protocol (MCP) v2 SDK line, split out of the main mcp
+ package as its own dependency starting with mcp 2.0.
+ .
+ Packaged to satisfy mcp (>= 2.0.0b2)'s dependency, needed for the
+ mcprack fastmcp 4.0.0a2 migration.
