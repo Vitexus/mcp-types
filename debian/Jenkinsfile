@@ -10,9 +10,7 @@
 String[] distributions = [
 			// 'debian:bookworm', // Disabled: unverified for this new package's first build.
 			'debian:trixie',
-			// 'debian:forky', // Disabled: Forky is still unstable/research-only.
-			//                 // The full Debian package ecosystem is not yet available for Forky.
-			//                 // Re-enable once the stack builds cleanly for Forky.
+			'debian:forky',
 			// 'ubuntu:jammy', // Disabled: unverified for this new package's first build.
 			// 'ubuntu:noble', // Disabled: unverified for this new package's first build.
 			// 'ubuntu:resolute', // Disabled: unverified for this new package's first build.
