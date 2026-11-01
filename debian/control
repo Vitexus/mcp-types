@@ -26,4 +26,4 @@ Description: Model Context Protocol wire types (Python)
  package as its own dependency starting with mcp 2.0.
  .
  Packaged to satisfy mcp (>= 2.0.0b2)'s dependency, needed for the
- mcprack fastmcp 4.0.0a2 migration.
+ mcprack FastMCP 4.1.4.

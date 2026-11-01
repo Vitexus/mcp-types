@@ -6,7 +6,7 @@
 // pre-release packages in this stack (idna 3.18, httpcore2, httpx2) have
 // all hit distro-specific toolchain failures on bookworm/jammy/noble on
 // their first attempts. trixie is what's actually needed for the mcprack
-// fastmcp 4.0.0a2 / mcp 2.0 migration. Widen once this is proven to build.
+// FastMCP 4.1.4 / mcp 2. Widen once this is proven to build.
 String[] distributions = [
 			// 'debian:bookworm', // Disabled: unverified for this new package's first build.
 			'debian:trixie',
